@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    --pale-blue: hsl(225, 100%, 94%);
+    --brigt-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaurated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    display: grid;
+    padding: 24px;
+
+    place-content: center;
+
+    background: var(--pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    padding-bottom: 8px;
+  background: #FFF;
+    border-radius: 20px;
+    box-shadow:
+            0 6.2px 9.8px -56px rgba(0, 0, 0, 0.024),
+            0 20.2px 23.3px -56px rgba(0, 0, 0, 0.036),
+            0 89px 80px -56px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.card__image {
+    width: 100%;
+    margin-bottom: 31px;
+}
+
+.card__title {
+    margin: 0 20px 20px;
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.card__caption {
+    margin: 0 0 22px;
+    padding: 0 34px;
+
+    color: var(--desaurated-blue);
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: .007em;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.card__banner {
+    display: flex;
+    margin: 0 24px 24px;
+    padding: 16px 16px;
+
+    align-items: center;
+
+    background: #F8F9FE;
+    border-radius: 15px;
+}
+
+.card__icon {
+    margin-right: 20px;
+}
+
+.card__plan {
+    margin-bottom: 5px;
+    font-size: 14px;
+  font-weight: 900;
+}
+
+.card__price {
+    color: var(--desaurated-blue);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card__change {
+    position: relative;
+    top: 2px;
+
+    display: inline-block;
+    margin-left: auto;
+
+    color: var(--brigt-blue);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.card__actions {
+    margin: 0 24px 10px;
+}
+
+.card__action {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin: 0 0 8px;
+    padding: 17px 20px;
+
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    color: var(--desaurated-blue);
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card__action--primary {
+    background: var(--brigt-blue);
+    color: #FFF;
+
+    box-shadow:
+            0 4.6px 23.3px rgba(51, 41, 224, 0.1),
+            0 1.4px 9.8px rgba(51, 41, 224, 0.084),
+            0 20px 80px rgba(51, 41, 224, 0.18);
+}
