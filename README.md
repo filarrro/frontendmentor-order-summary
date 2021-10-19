@@ -15,9 +15,10 @@ Users should be able to:
 
 - See hover states for interactive elements
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+![Desktop version](./screenshots/desktop-filarrro-order-summary.netlify.app.png)
+![Mobile version](./screenshots/mobile-filarrro-order-summary.netlify.app.png)
 
 ### Links
 
