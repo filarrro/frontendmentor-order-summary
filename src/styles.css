@@ -20,6 +20,7 @@ body {
   background-color: var(--pale-blue);
   background-image: url("images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
   font-family: "Red Hat Display", sans-serif;
   overflow: auto;
 }
@@ -127,7 +128,7 @@ body {
     0 1.4px 9.8px rgba(51, 41, 224, 0.084), 0 20px 80px rgba(51, 41, 224, 0.18);
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 800px) {
   body {
     background-image: url("images/pattern-background-desktop.svg");
   }
