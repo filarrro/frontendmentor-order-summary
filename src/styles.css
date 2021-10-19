@@ -9,6 +9,7 @@ html {
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaurated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+  --purple: #766bf1;
 }
 
 body {
@@ -98,6 +99,13 @@ body {
   font-size: 13px;
   font-weight: 700;
   text-decoration: underline;
+
+  transition: color 0.2s;
+}
+.card__change:hover,
+.card__change:focus-visible {
+  color: var(--purple);
+  text-decoration: none;
 }
 
 .card__actions {
@@ -118,6 +126,10 @@ body {
   font-size: 15px;
   font-weight: 700;
   text-align: center;
+  transition: color 0.2s, background-color 0.2s;
+}
+.card__action:hover {
+  cursor: pointer;
 }
 
 .card__action--primary {
@@ -126,6 +138,17 @@ body {
 
   box-shadow: 0 4.6px 23.3px rgba(51, 41, 224, 0.1),
     0 1.4px 9.8px rgba(51, 41, 224, 0.084), 0 20px 80px rgba(51, 41, 224, 0.18);
+}
+.card__action--primary:hover,
+.card__action--primary:focus-visible {
+  background-color: var(--purple);
+}
+
+.card__action--secondary {
+}
+.card__action--secondary:hover,
+.card__action--secondary:focus-visible {
+  color: var(--dark-blue);
 }
 
 @media all and (min-width: 800px) {
